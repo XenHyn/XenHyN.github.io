@@ -57,12 +57,56 @@ body {
 	position: absolute;
 	border: solid cyan 1px;
 	height: 500px;
-	overflow: auto;
 	margin-top: 12.65%;
 	margin-left: 75%;
 	height: 500px;
-	overflow:auto;
 	width: 20%;
+}
+
+#misc table {
+	border: 1px solid cyan;
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#misc thead {
+	border: 1px solid cyan;
+	display: block;
+	overflow: hidden;
+	height: 100px;
+	width: 100%;
+	background: red;
+}
+
+#misc tbody {
+	border: 1px solid cyan;
+	background: green;
+	display:block;
+	overflow:auto;
+	height:395px;
+	width: 100%;
+}
+		
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 5px #00344C;
+	border-radius: 10px;
+	background-color: cyan;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	box-shadow: inset 0 0 5px cyan;
+	background-color: black;
 }
 		
 .testlink:link {

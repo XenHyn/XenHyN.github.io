@@ -42,6 +42,32 @@ body {
 	width: 20%; <!-- For some reason overflow won't work if put after this. -->
 }
 
+#aboutme table {
+	border: 1px solid cyan;
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#aboutme thead {
+	border: 1px solid pink;
+	display: block;
+	overflow: hidden;
+	height: 25%;
+	width: auto;
+	background: red;
+}
+
+#aboutme tbody {
+	border: 1px solid cyan;
+	background: green;
+	display:block;
+	overflow:auto;
+	height: 75%;
+	width: auto;
+}
+
 #works {
 	position: absolute;
 	border: solid cyan 1px;
@@ -53,11 +79,38 @@ body {
 	width: 20%;
 }
 
+#works table {
+	border: 1px solid cyan;
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#works thead {
+	border: 1px solid pink;
+	display: block;
+	overflow: hidden;
+	height: 25%;
+	width: auto;
+	background: red;
+}
+
+#works tbody {
+	border: 1px solid cyan;
+	background: green;
+	display:block;
+	overflow:auto;
+	height: 75%;
+	width: auto;
+}
+
 #misc {
 	position: absolute;
-	height: 50%;
 	margin-top: 12.65%;
 	margin-left: 75%;
+	height: 50%;
+	overflow: hidden;
 	width: 20%;
 }
 

@@ -10,10 +10,11 @@ body {
 #name {
 	position: absolute;
 	text-align: right;
-	font-size: 50px;
+	font-size: 5vw;
 	margin-top: 0%;
 	margin-left: 25%;
 	border: solid cyan 1px;
+	height: 15%;
 	width: 70%;
 }
 		
@@ -32,18 +33,20 @@ body {
 	width: 20%;
 }
 
+#contacts:hover {
+	box-shadow: 0px 0px 30px 10px #0ff;
+}
+
 #aboutme {
 	position: absolute;
-	border: solid cyan 1px;
 	margin-top: 12.65%;
 	margin-left: 25%;
 	height: 50%;
-	overflow: auto;
 	width: 20%; <!-- For some reason overflow won't work if put after this. -->
 }
 
 #aboutme table {
-	border: 1px solid cyan;
+	<!--border: 1px solid cyan;-->
 	table-layout: fixed;
 	height: 100%;
 	width: 100%;
@@ -51,17 +54,20 @@ body {
 }
 
 #aboutme thead {
-	border: 1px solid pink;
+	border: 1px solid cyan;
 	display: block;
 	overflow: hidden;
 	height: 25%;
 	width: auto;
-	background: red;
+	font-size: 4.5vw;
+}
+
+#aboutme thead:hover {
+	box-shadow: 0px 0px 30px 10px #0ff;
 }
 
 #aboutme tbody {
 	border: 1px solid cyan;
-	background: green;
 	display:block;
 	overflow:auto;
 	height: 75%;
@@ -70,7 +76,6 @@ body {
 
 #works {
 	position: absolute;
-	border: solid cyan 1px;
 	overflow: auto;
 	margin-top: 12.65%;
 	margin-left: 50%;
@@ -88,17 +93,16 @@ body {
 }
 
 #works thead {
-	border: 1px solid pink;
+	border: 1px solid cyan;
 	display: block;
 	overflow: hidden;
 	height: 25%;
 	width: auto;
-	background: red;
+	font-size: 3.5vw;
 }
 
 #works tbody {
 	border: 1px solid cyan;
-	background: green;
 	display:block;
 	overflow:auto;
 	height: 75%;
@@ -110,7 +114,7 @@ body {
 	margin-top: 12.65%;
 	margin-left: 75%;
 	height: 50%;
-	overflow: hidden;
+	overflow: auto;
 	width: 20%;
 }
 
@@ -123,23 +127,22 @@ body {
 }
 
 #misc thead {
-	border: 1px solid pink;
+	border: 1px solid cyan;
 	display: block;
 	overflow: hidden;
 	height: 25%;
 	width: auto;
-	background: red;
+	font-size: 4.5vw;
 }
 
 #misc tbody {
 	border: 1px solid cyan;
-	background: green;
 	display:block;
 	overflow:auto;
 	height: 75%;
 	width: auto;
 }
-		
+	
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
